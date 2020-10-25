@@ -1,0 +1,22 @@
+.front-page {
+    background-image: url('img/frontpage3.jpg');
+    background-size: contain;
+    height: 800px;
+}
+
+.logo {
+    background: transparent !important;
+    width: 5%;
+    padding: 15px;
+}
+
+.content-box {
+    max-width: 80%;
+    margin: auto;
+}
+
+.card {
+    margin: 0;
+    padding-bottom: 10px;
+    border-radius: 10%;
+}

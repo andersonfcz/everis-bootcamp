@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.front-page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    min-height: 100vh;
+    min-width: 350px;
+}
+
+.front-page-side-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.front-page-side-left img {
+    height: 50rem;
+
+}
+
+.front-page-side-right {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+    width: 35%;
+    min-height: 34rem;
+
+    
+}
+
+.front-page-group  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white; 
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    margin-top: 10px;
+
+}
+
+.front-page-group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.front-page-logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 8rem;
+}
+
+.logged-in {
+    background-color: #0095f6;
+    color: white;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 1rem;
+}
+
+.logout {
+    color: #0095f6;
+    margin-top: 1rem;
+
+}
+
+.change-account-message {
+    color: rgb(160, 160, 160);
+}
+
+.switch-account, .register {
+    color: #0095f6;
+
+}
+
+.front-page-download-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download-link {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download-button {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.app-download-button:nth-child(1) {
+    background-image: url('img/apple-button.png');
+}
+
+.app-download-button:nth-child(2) {
+    background-image: url('img/googleplay-button.png');
+}
+
+
+@media(max-width: 1024px) {
+    .front-page-wrapper {
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px) {
+    .front-page-wrapper {
+        width: 90%;
+    }
+
+    .front-page-side-left img {
+        display: none;
+    }
+
+    .front-page-side-right {
+        width: 100%;
+    }
+
+    .front-page-group {
+        border: 1px solid transparent;
+    }
+    
+    body {
+        background-color: white;
+    }
+}
