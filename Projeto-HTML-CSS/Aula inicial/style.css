@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+body {
+    background-color: rgb(250 245 242);
+    font-family: Verdana;
+    max-width: 80%;
+    margin: auto;
+
+}
+
+#photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#title, .subtitle, .post-title {
+    color: #595959;
+    font-weight: bold;
+
+}
+
+#title {
+    font-size: 100px;
+    width: 40%;
+    margin: 0;
+    font-family: 'Pinyon Script', cursive;
+    font-weight: normal;
+}
+
+a {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+}
+
+.post-title {
+    font-style: italic;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 15px;
+
+}
+
+.post-image {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post-content {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.post {
+    border: 2px solid rgb(191, 191, 191);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color:  rgb(246 245 245);
+
+}
+
+
+.contact_list {
+    list-style-type: none;
+    padding-left: 5px;    
+}
+
+.contact_list li {
+    display: inline;
+
+}
