@@ -1,0 +1,59 @@
+Web services - soluções para aplicações se comunicarem independente da linguagem, atraves do protocolo HTTP sendo identificado por uma URL.   São API's que se comunicam por meio de redes utilizando o protocolo HTTP. Se expoem dados atraves de linguagem de marcação XML, JSON, GRAPHQL etc.
+Arquiteturas de Web Services: SOAP e REST
+
+SOAP - Simple Object Acces Protocol
+Protocolo baseaco em XML para acessar serviços web atraves do HTTP. É uma definição de como serviçoes web se comunicam. É um meio de transporte genérico, permitindo utilizar tambem outros protocolos alem do HTTP, como SMTP etc.
+
+O SOAP message possui estrutura unica que sempre deve ser seguida.
+
+SOAP Envelop - primeiro elemento do documento, usado para encapsular toda a mensagem SOAP
+SOAP HEADER - possui informaçoes de atributos e metadados da requisicao como token etc.
+SOAP BODY - contem os detalhes da mensagem
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+	<soap:Header>
+	</soap:Header>
+	<soap:Body>
+		<m:MetodoEndereco xmlns:m="http://www.example.org/endereco">
+			<m:Cidade>Rio de janeiro </m:Cidade>
+			<m:CEP>99999-99</m:CEP>
+			  ....
+		</m:Endereco>
+	</soap:Body>
+</soap:Envelope>
+
+WSDL - Web Service Description Language
+
+Usado para descrever Web Services, funciona como um contrato do serviço, é feito em um XML onde é descrito o serviço, especificações de acesso, operações e métodos.
+
+XSD - XML Schema Definition
+
+Define a estrutura de dados que será válida no XML, documentação de como deve ser montado o SOAP message
+
+
+REST - Representational State Transfer
+
+Estilo de arquitetura que define a implementacao de serviços web, pode trabalhar com XML, JSON etc. Utiliza metodos HTTP para definir a operaçao que esta sendo efetuada.
+
+API - Application Programming Interface
+Conjuntos de rotinas documentados e disponibilizados por uma aplicação para que outras aplicações possam consumir suas funcionalidades.
+
+PRINCIPAIS METODOS HTTP
+GET - solicita a representação de um recurso (solicita uma informação)
+POST - Solicita a criação de um recurso (envia uma informação para ser processada de alguma forma)
+DELETE - Solicita a exclusão de um recurso
+PUT - Solicita a atualização de um recurso
+
+JSON - JavaScript Object Notation
+Formatação utilizada para troca mensagens entre sistemas, usa estruturas do tipo chave:valor e tambem listas ordenadas
+
+STATUS CODE
+Usado pelo servidor para avisar ao cliente sobre o estado da operação solicitada
+
+1xx - informativo - Informa o recebimento mas ainda não possui resposta para confirmar sucesso ou falha
+2xx - sucesso - confirma recebimento e processamento
+3xx - redirecionamento - retorna uma mensagem informando nova URL para solicitar a operaçao
+4xx - Erro do cliente - cliente solicita enviando informacao errada ou em uma url invalida
+5xx - Erro do servidor - erro do servico , nao conseguiu processar a operacao
+
+
