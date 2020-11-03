@@ -1,0 +1,106 @@
+@media (max-width:1300px) {
+    body {
+        width: 80%;
+    }
+
+    .icon-card {
+        width: 200px;
+        height: 130px;
+    }
+}
+
+
+@media(max-width: 1200px) {
+    body {
+        width: 70%;
+    }
+    .icon-card {
+        margin: 2px;
+        width: 130px;
+        height: 80px;
+    }
+
+    .assinatura {
+        width: 100%;
+    }
+
+    .devices img {
+        width: 70%;
+    }
+
+    .devices p {
+        font-size: 15px;
+    }
+
+    .devices h2 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 860px) {
+    body {
+        width: 100%
+    }
+    main {
+        box-sizing: border-box;
+    }
+
+    .icon-card {
+        width: 200px;
+        height: 130px;
+    }
+    
+    .channels-wrapper {
+        width: 90%;
+    }
+    .channels-icons {
+        width: 90%;
+    }
+
+    .assinatura {
+        background-size: cov;
+        background-repeat: no-repeat;
+    }
+
+
+    .devices img {
+        width: 60%;
+    }
+
+    .devices {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .device {
+        width: 100%;
+        height: 640px;
+    }
+    .devices p {
+        font-size: 30px;
+    }
+
+    .devices h2 {
+        font-size: 40px;
+    }
+
+    footer {
+        height: 500px;
+        width: 100%;
+    }
+
+    .nav-footer a {
+        font-size: 40px;
+    }
+    
+    .footer-logo img{
+        width: 20%;
+    }
+
+    * {
+        margin-left: 5px;
+    }
+
+}
+
