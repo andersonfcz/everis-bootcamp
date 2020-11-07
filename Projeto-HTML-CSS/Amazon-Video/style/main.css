@@ -40,7 +40,6 @@ body {
 
 .menu a:hover {
     color: whitesmoke;
-    fon
 }
 
 #language-value {
@@ -274,10 +273,10 @@ body {
 .icon-card {
     margin: 7px;
     max-width: 270px;
-    width: 260px;
+    width: 229px;
     float: left;
     overflow: hidden;
-    height: 160px;
+    height: 158px;
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: contain;
